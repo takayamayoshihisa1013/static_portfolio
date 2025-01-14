@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="../css/work.css">
+    <title>高山慶久 ポートフォリオサイト</title>
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav class="menu">
+            <ul>
+
+                <li><a href="/#top">トップ</a></li>
+                <li><a href="/#profile">プロフィール</a></li>
+                <li><a href="/#skill">スキル</a></li>
+                <li><a href="/#work">作品</a></li>
+            </ul>
+        </nav>
+        <div class="menu768">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="sideNav">
+            <ul>
+                <li><a href="/#top">トップ</a></li>
+                <li><a href="/#profile">ステータス</a></li>
+                <li><a href="/#skill">スキル</a></li>
+                <li><a href="/#work">作品</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="detail">
+        <section class="workTop">
+            <div class="workTopDetail">
+                <h1>クッションのECサイト「softNest」h1>
+                <h2>使用技術</h2>
+                <p>Python/Django/MySQL</p>
+                <h2>制作期間</h2>
+                <p>2週間</p>
+            </div>
+            <div class="topDetailImage">
+                <img src="../images/work/top/work4.png" alt="">
+            </div>
+        </section>
+        <section class="workDetailSection">
+            <h2>概要</h2>
+            <div class="workDetail">
+                <p>Djangoを学んだのでアウトプットをしてみようと思って作ったサイトです。</p>
+                        <p>Djangoのフォルダやファイル、コードなどは調べながら書いたりすることができたのですが、データベースの操作のコードがSQL文ではなく独特なものでとても難しかったです。
+                        <p>サイトは今回見やすさを重視しようと思ったのでシンプルなデザインで作ってみました。</p>
+            </div>
+        </section>
+        <section class="detailText">
+            <h1>サイト構成</h1>
+            <h2>トップページ</h2>
+                    <div class="detailImage">
+                        <img src="../images/work/top/work4.png" alt="">
+                    </div>
+                    <div class="detailImage">
+                        <img src="../images/work/subImage/work30.png" alt="">
+                    </div>
+                    <div class="detailImage">
+                        <img src="../images/work/subImage/work33.png" alt="">
+                    </div>
+                    <div class="detailImage">
+                        <img src="../images/work/subImage/work34.png" alt="">
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>・各ページに飛ぶことができます。</li>
+                        </ul>
+                    </div>
+                    <h2>商品一覧ページ</h2>
+                    <div class="detailImage">
+                        <img src="../images/work/subImage/work31.png" alt="">
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>・人気順や登録日付順、値段順にソートをすることができます。</li>
+                            <li>・ヘッダーの虫眼鏡を押すと検索バーが上から出てくるようにしました。</li>
+                        </ul>
+                    </div>
+                    <h2>商品ページ</h2>
+                    <div class="detailImage">
+                        <img src="../images/work/subImage/work32.png" alt="">
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>・ハートマークを押すとお気に入りリストに追加することができます。</li>
+                            <li>・色とサイズを選んでカートに入れたり、購入することができます。選ばずにカートに入れたり購入しようとすると「選択してください」とアラートが出るようになっています。</li>
+                            <li>・在庫切れの状態だとボタンを押せないようにしました。</li>
+                        </ul>
+                    </div>
+                    <h2>カートページ</h2>
+                    <div class="detailImage">
+                        <img src="../images/work/subImage/work35.png" alt="">
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>・ハートマークを押すとお気に入りリストに追加することができます。</li>
+                            <li>・色とサイズを選んでカートに入れたり、購入することができます。選ばずにカートに入れたり購入しようとすると「選択してください」とアラートが出るようになっています。</li>
+                            <li>・在庫切れの状態だとボタンを押せないようにしました。</li>
+                        </ul>
+                    </div>
+                    <h2>購入履歴ページ</h2>
+                    <div class="detailImage">
+                        <img src="../images/work/subImage/work36.png" alt="">
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>・購入した商品を日付ごとに見ることができます。</li>
+                        </ul>
+                    </div>
+
+        </section>
+        <section class="return">
+            <button><a href="/#work">前のページに戻る</a></button>
+        </section>
+    </main>
+</body>
+<script src="../js/base.js"></script>
+</html>

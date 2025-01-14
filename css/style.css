@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dcdcdc;
+    background-image: url(./../images/r1280x720l.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+}
+
+header {
+    height: 5dvh;
+    width: 80%;
+    padding: 2.5dvh 10%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 5vh;
+    background-color: #FFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    width: 20%;
+    text-align: center;
+    font-size: 4vmin;
+}
+
+header .menu {
+    width: 40%;
+
+}
+
+header .menu768 {
+    display: none;
+    text-align: center;
+}
+
+
+
+header .menu ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header .menu ul li {
+    font-size: 1.0vw;  /* フォントサイズを少し小さくする */
+    flex-shrink: 1;
+    text-align: center;
+    padding: 0.5%;
+    cursor: pointer;
+}
+
+header .menu ul li a {
+    font-size: 1.0vw;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
+header .sideNav {
+    position: fixed;
+    top: 0;
+    right: -80%;
+    z-index: 1;
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+header .sideNav ul {
+    width: 100%;
+    list-style: none;
+}
+
+header .sideNav ul li {
+    width: 90%;
+    height: 7vh;
+    padding: 0 5%;
+    line-height: 7vh;
+}
+
+header .sideNav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+main {
+    width: 100%;
+    /* margin-top: 10vh; */
+}
+
+
+
+main section {
+    background-color: #fff; /* 白 */
+    width: 70%;
+    padding: 10dvh 15%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
+
+main .profile_back {
+    background-color: #f0f0f0; /* 明るいグレー */
+    height: 80vh;
+    width: 50%;
+    color: #333; /* ダークグレー */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+    /* margin: ; */
+}
+
+main .profile_back h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #007BFF; /* ブルー */
+}
+
+main .profile_back h2 {
+    font-size: 1.5em;
+    margin: 10px 0 0;
+    padding: 0;
+    font-weight: 300;
+    color: #555; /* グレー */
+}
+
+
+
+
+
+
+
+main section .title {
+    text-align: center;
+    font-size: 1.7em;
+    color: #444; /* ダークグレー */
+}
+
+main .profile .profile_zone {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; 
+    margin-top: 10vh;
+}
+
+main .profile .icon {
+    width: 40%;
+}
+
+main .profile .icon img {
+    display: block;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0 auto;
+    flex: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
+
+main .profile .profile_zone .profile_text {
+    width: 55%;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+main .profile .profile_zone .profile_text h4 {
+    font-size: 0.9em;
+    color: #007BFF;
+}
+
+main .profile .profile_zone .profile_text h3 {
+    color: #444;
+} 
+
+main .profile .profile_zone .profile_text h4 {
+    color: #696969; 
+}
+
+main .profile .profile_zone .profile_text .school {
+    margin-top: 2vh;
+}
+
+main .profile .profile_zone .profile_text .school {
+    margin-bottom: 1vh;
+}
+
+main .profile .profile_zone .profile_text p {
+    color: #555; /* 少し明るいグレー */
+}
+
+main .profile .moreButton {
+    display: block;
+    text-align: center;
+    width: 8vw;
+    height: 4vh;
+    background-color: #007BFF; /* ブルー */
+    color: #fff; /* 白 */
+    padding: 1vh 1vw;
+    line-height: 4vh;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10vh auto;
+    transition: background-color 0.3s;
+}
+
+main .profile .moreButton:hover {
+    background-color: #0056b3; /* ダークブルー */
+}
+
+.skill {
+    background-color: #f5f5f5; /* ライトグレー */
+}
+
+.skill .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill .row .skill_icon p {
+    font-size: 3em;
+    color: #666; /* グレー */
+}
+
+.skill .row .skill_detail {
+    width: 18%;
+    padding: 2vh 1%;
+    text-align: center;
+    margin: 5vh auto;
+    border-radius: 10px;
+    border: 1px solid #ddd; /* ライトグレーのボーダー */
+    background-color: #fff; /* 白 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
+
+.skill .row .back_bar {
+    width: 80%;
+    height: 0.5vh;
+    background-color: #ddd; /* ライトグレー */
+    margin: 2vh auto 0;
+    border-radius: 10px;
+}
+
+.skill .row .back_bar div {
+    height: 100%;
+    background-color: #007BFF; /* ブルー */
+}
+
+
+
+.python {
+    width: 50%;
+}
+
+.java {
+    width: 10%;
+}
+
+.html {
+    width: 60%;
+}
+
+.css {
+    width: 50%;
+}
+
+.javascript {
+    width: 40%;
+}
+
+.database {
+    width: 40%;
+}
+
+
+.work {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10vh 5%;
+}
+
+.work .row {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.work .row .work_detail {
+    width: 28%;
+    margin: 5vh auto;
+    position: relative;
+    padding: 1%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
+
+.work .row .work_detail .work_img {
+    width: 100%;
+    height: 30vh;
+}
+
+.work .row .work_detail .work_img img {
+    overflow: hidden;
+    object-fit: contain;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    border-radius: 10px; /* 角を丸く */
+}
+
+.work .row .work_detail p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.work .row .work_detail a {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    transition: 0.4s;
+    opacity: 0;
+    border-radius: 10px; /* 角を丸く */
+}
+
+.work .row .work_detail a:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+    header .menu768 {
+        display: block;
+    }
+
+    header .menu  {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 4vw;
+    }
+
+    header nav ul li {
+        font-size: 3vw;
+    }
+
+    main .profile .profile_zone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .profile .icon {
+        width: 100%;
+    }
+
+    main .profile .profile_zone .profile_text {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 1em;
+    }
+
+    .skill .row {
+        width: 100%;
+        display: block;
+    }
+
+    .skill .row .skill_detail {
+        width: 80%;
+        text-align: center;
+    }
+
+    .work .row {
+        width: 100%;
+        display: block;
+    }
+    
+    .work .row .work_detail {
+        width: 96%;
+        padding: 2%;
+    }
+
+    main .profile .moreButton {
+        display: block;
+        text-align: center;
+        width: 100px;
+        height: 25px;
+        background-color: #007BFF;
+        color: #fff;
+        padding: 1vh 1vw;
+        line-height: 25px;
+        text-decoration: none;
+        border-radius: 10px;
+        margin: 10vh auto;
+    }
+
+    .work .row .work_detail a.active {
+        opacity: 1;
+    }
+}
