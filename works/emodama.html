@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="../css/work.css">
+    <title>高山慶久 ポートフォリオサイト</title>
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav class="menu">
+            <ul>
+
+                <li><a href="/static_portfolio/#top">トップ</a></li>
+                <li><a href="/static_portfolio/#profile">プロフィール</a></li>
+                <li><a href="/static_portfolio/#skill">スキル</a></li>
+                <li><a href="/static_portfolio/#work">作品</a></li>
+            </ul>
+        </nav>
+        <div class="menu768">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="sideNav">
+            <ul>
+                <li><a href="/static_portfolio/#top">トップ</a></li>
+                <li><a href="/static_portfolio/#profile">ステータス</a></li>
+                <li><a href="/static_portfolio/#skill">スキル</a></li>
+                <li><a href="/static_portfolio/#work">作品</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="detail">
+        <section class="workTop">
+            <div class="workTopDetail">
+                <h1>Emodama -日々の出来事や感じたことを感情ごと表現するSNS</h1>
+                <h2>使用技術</h2>
+                <p>HTML/CSS/JavaScript/React/Python/Flask/MySQL/Azure/Cloudflare</p>
+                <h2>制作期間</h2>
+                <p>3カ月（React勉強期間含む）</p>
+            </div>
+            <div class="topDetailImage">
+                <img src="../images/work/top/work6.png" alt="">
+            </div>
+        </section>
+        <section class="workDetailSection">
+            <h2>概要</h2>
+            <div class="workDetail">
+                <p>学校の就職作品プレゼンテーションというイベントに向けて制作した作品です。</p>
+                <p>Emodamaでは文だけでは読み取りにくい投稿したユーザーの感情をわかりやすく表現することにより思い違いなどを少なくし、見る人が共感しやすくなっているSNSです。</p>
+                <p>制作した理由はローカルではなく、アクセスができるサイトを作ってみたかったこと、自分で学んだReactでサイトを作りたかったこと、そしてSNSはどのようにユーザー同士が繋がることができているのかを自分の手で作ることで学びたかったからです。
+                </p>
+                <p>既存のSNSと異なる点は、投稿した人の感情がわかりやすいことです。エフェクトや画像によってより分かりやすくなっています。</p>
+                <p>また、リアクションをしたユーザーの感情もわかるように、リアクションの数を増やし豊富にすることでグッドマークやハートマークだけでは伝わらないどのような気持ちで押されたのかがわかるようになっています。
+                </p><br />
+                <p>作品URL: <a href="https://emodama.rurariyu.dev" target="_blank">https://emodama.rurariyu.dev</a></p>
+                <p></p>
+            </div>
+        </section>
+        <section class="detailText">
+            <h1>サイト構成</h1>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work37.png" alt="">
+            </div>
+            <h2>Topページ</h2>
+            <div class="detailImage">
+                <img src="../images/work/top/work6.png" alt="">
+            </div>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work38.png" alt="">
+            </div>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work39.png" alt="">
+            </div>
+            <div class="comment">
+                <ul>
+                    <li>・投稿を見ることができます。</li>
+                    <li>・ログインをすることで投稿やリアクション、コメント、ブックマークの登録をすることができます。</li>
+                    <li>・投稿の文の完全一致で検索することができます。</li>
+                </ul>
+            </div>
+            <h2>プロフィールページ</h2>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work40.png" alt="">
+            </div>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work42.png" alt="">
+            </div>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work41.png" alt="">
+            </div>
+            <div class="comment">
+                <ul>
+                    <li>・自分の場合はユーザーアイコン、プロフィールの背景、ユーザー名、プロフィール文を変えることができます。</li>
+                    <li>・他のユーザーの場合はフォローやチャットを追加することができます。</li>
+                </ul>
+            </div>
+            <h2>フォロー・フォロワーページ</h2>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work43.png" alt="">
+            </div>
+            <div class="comment">
+                <ul>
+                    <li>自分がフォローしているユーザーまたは、自分をフォローしているユーザーを見ることができます。</li>
+                </ul>
+            </div>
+            <h2>通知ページ</h2>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work44.png" alt="">
+            </div>
+            <div class="comment">
+                <ul>
+                    <li>・他のユーザーがリアクションやフォローをした時に通知が追加されます。</li>
+                </ul>
+            </div>
+            <h2>ブックマークページ</h2>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work45.png" alt="">
+            </div>
+            <div class="comment">
+                <ul>
+                    <li>・ブックマークに登録した投稿を見ることができます。</li>
+                </ul>
+            </div>
+            <h2>チャットページ</h2>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work46.png" alt="">
+            </div>
+            <div class="comment">
+                <ul>
+                    <li>・他のユーザーと一対一で会話することができます。</li>
+                </ul>
+            </div>
+            <h2>設定ページ</h2>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work47.png" alt="">
+            </div>
+            <div class="detailImage">
+                <img src="../images/work/subImage/work48.png" alt="">
+            </div>
+            <div class="comment">
+                <ul>
+                    <li>・チャットの追加可否やダークモードへの変更、プロフィールページで自分の投稿を他のユーザーから見ることができないようにすること、アカウント削除ができます。</li>
+                </ul>
+            </div>
+        </section>
+        <section class="return">
+            <button><a href="/static_portfolio/#work">前のページに戻る</a></button>
+        </section>
+    </main>
+</body>
+<script src="../js/base.js"></script>
+
+</html>
